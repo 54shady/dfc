@@ -1,6 +1,11 @@
-FROM x86/centos:7
+ARG BUILD_FROM=x86/centos:7
+FROM $BUILD_FROM
+# build with default argument
+# docker build . -t x86-libiscsi
+#
+# build with new argument
+# docker build . -t arm-libiscsi --build-arg BUILD_FROM=arm/centos:7
 
-# docker build . -t libiscsi
 LABEL usage='drun -v $PWD:/output -v /usr/portage/distfiles/libiscsi-1.19.0.tar.gz:/code/libiscsi-1.19.0.tar.gz libiscsi'
 
 WORKDIR /code
