@@ -1,5 +1,5 @@
 # create a image install the libiscsi version 1.19
-# docker build --network host . -t ctos-libiscsi19
+# docker build --network host . -t ctos-libiscsi19 -f dockerfile1
 
 # using builder to build the rpm package
 FROM x86/centos:7 as builder
