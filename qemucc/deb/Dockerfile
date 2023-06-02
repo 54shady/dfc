@@ -40,4 +40,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 	gcc \
 	make \
 	libcap-ng-dev \
-	libattr1-dev
+	libattr1-dev \
+	git
