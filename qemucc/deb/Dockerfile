@@ -1,4 +1,5 @@
-# docker build . -t tagname --build-arg BASE_IMAGE=x86/ubuntu:2004
+# docker build . -t x86/ubuntu:qemucc --build-arg BASE_IMAGE=x86/ubuntu:2004
+# docker build . -t arm/ubuntu:qemucc --build-arg BASE_IMAGE=arm/ubuntu:2204
 ARG BASE_IMAGE=x86/ubuntu:2204
 FROM $BASE_IMAGE
 
